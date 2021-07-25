@@ -1,7 +1,10 @@
 const express = require('express');
+
+// generate uniq id's
 const { v4: uuidv4 } = require('uuid');
 const app = express();
 
+// Middleware
 app.use(express.json());
 
 let todos = [
