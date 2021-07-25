@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
-import Todos from './components/todos';
+import Todos from './components/Todos';
+import PreLoader from './components/Preloader';
+import Header from './components/Header';
 
 function App() {
   const [todos, setTodos] = useState(null);
@@ -16,7 +18,10 @@ function App() {
 
   return (
     <div className='App'>
-      <Todos todos={todos} />
+      <div className='container'>
+        <Header />
+        {todos ? <Todos todos={todos} /> : <PreLoader />}
+      </div>
     </div>
   );
 }
