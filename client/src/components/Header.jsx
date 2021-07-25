@@ -1,10 +1,14 @@
 import React from 'react';
-
+import './Header.css';
 const Header = () => {
   return (
     <div className='heading'>
-      <h1>React todo app..</h1>
-      <p>One todo at a time</p>
+      <h1>
+        Fullstack Todo <span className='italic secondary-color'>App...</span>
+      </h1>
+      <p className='italic secondary-color'>
+        Created with Node, Express and React
+      </p>
     </div>
   );
 };
