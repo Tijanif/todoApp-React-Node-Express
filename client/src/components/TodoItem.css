@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.todoItem {
+  margin: 2rem 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.todoItem h1 {
+  /* color: #f4f4f4; */
+  background: #f0a999;
+  padding: 1rem;
+  transition: background 0.5s ease;
+}
+
+.todoItem h1:hover {
+  cursor: pointer;
+  color: #f0a999;
+  background: #333;
+  padding: 1rem;
+}
