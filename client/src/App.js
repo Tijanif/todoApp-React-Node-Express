@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
+import Todos from './components/todos';
 
 function App() {
   const [todos, setTodos] = useState(null);
@@ -13,7 +14,11 @@ function App() {
     getTodos();
   }, []);
 
-  return <div className='App'></div>;
+  return (
+    <div className='App'>
+      <Todos todos={todos} />
+    </div>
+  );
 }
 
 export default App;
