@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 
 // generate uniq id's
 const { v4: uuidv4 } = require('uuid');
@@ -6,7 +7,7 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-
+app.use(cors());
 let todos = [
   {
     message: 'Wash car',
