@@ -4,7 +4,7 @@
   border-bottom: 2px solid #ee6f57;
   margin: 3rem 0 0.5rem 0;
   font-size: 2rem;
-  transition: padding 0.5s ease;
+  transition: padding 0s ease;
 }
 
 .input:focus {
